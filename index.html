@@ -5,56 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafe Menu</title>
     <link href="styles.css" rel="stylesheet"/>
-    <script>
-      window.onload = function() {
-        const images = document.querySelectorAll('img');
-        images.forEach(image => {
-          image.classList.add('loaded');
-        });
-      };
-    </script>
   </head>
   <body>
     <div class="menu">
       <main>
         <h1>CAMPER CAFE</h1>
         <p class="established">Est. 2020</p>
-        <hr>
-        <section>
-          <h2>Coffee</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-          <article class="item">
-            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
-          </article>
-          <article class="item">
-            <p class="flavor">Mocha</p><p class="price">4.50</p>
-          </article>
-        </section>
-        <section>
-          <h2>Desserts</h2>
-          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-          <article class="item">
-            <p class="dessert">Donut</p><p class="price">1.50</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
-          </article>
-          <article class="item">
-            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
-          </article>
-        </section>
+        <hr class="bottom-line1">
+				<section>
+					<h2>Coffee</h2>
+					<img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
+					<article class="item">
+						<img src="https://mirespresso.by/upload/iblock/bd5/xt7lp4lhhyo74deejdvcbhaj58fkicqu.webp" alt="French Vanilla" class="item-image"/>
+						<p class="flavor">French Vanilla</p>
+						<p class="price">3.00</p>
+					</article>
+					<article class="item">
+						<img src="https://center-kofe.ru/image/cache/catalog/Articles/Kofe-espresso-500x350.jpg" alt="Caramel Macchiato" class="item-image"/>
+						<p class="flavor">Caramel Macchiato</p>
+						<p class="price">3.75</p>
+					</article>
+					<article class="item">
+						<img src="https://nescafe.ru/sites/default/files/2024-08/GettyImages-1466623971%20%281%29.jpg" alt="Pumpkin Spice" class="item-image"/>
+						<p class="flavor">Pumpkin Spice</p>
+						<p class="price">3.50</p>
+					</article>
+					<article class="item">
+						<img src="https://filizhanka.com/images/news/news/napitki-iz-kofe-1-big.webp" alt="Hazelnut" class="item-image"/>
+						<p class="flavor">Hazelnut</p>
+						<p class="price">4.00</p>
+					</article>
+					<article class="item">
+						<img src="https://majaro.ru/wa-data/public/blog/pb/images/91_t.png" alt="Mocha" class="item-image"/>
+						<p class="flavor">Mocha</p>
+						<p class="price">4.50</p>
+					</article>
+				</section>
+				
+				<section>
+					<h2>Desserts</h2>
+					<img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
+					<article class="item">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrKwVLriwk8DOoiXHrURNnzwYRX7uU-osuQ&s" alt="Donut" class="item-image"/>
+						<p class="dessert">Donut</p>
+						<p class="price">1.50</p>
+					</article>
+					<article class="item">
+						<img src="https://proxy12.online.ua/retsepty/r3-93f953913a/big5319b686db7cf.jpg" alt="Cherry Pie" class="item-image"/>
+						<p class="dessert">Cherry Pie</p>
+						<p class="price">2.75</p>
+					</article>
+					<article class="item">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSnE8-qv3sZ-ls1dwRwTLVoTjkBLUdbkrDKQ&s" alt="Cheesecake" class="item-image"/>
+						<p class="dessert">Cheesecake</p>
+						<p class="price">3.00</p>
+					</article>
+					<article class="item">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJc0_2wm9RZ_Lvt_w0s81_rUuPiAFXkGpYJA&s" alt="Cinnamon Roll" class="item-image"/>
+						<p class="dessert">Cinnamon Roll</p>
+						<p class="price">2.50</p>
+					</article>
+				</section>
+				
       </main>
       <hr class="bottom-line">
       <footer>
@@ -64,5 +76,8 @@
         <p class="address">123 Free Code Camp Drive</p>
       </footer>
     </div>
+
+    <!-- Подключение JS -->
+    <script src="script.js"></script>
   </body>
 </html>
